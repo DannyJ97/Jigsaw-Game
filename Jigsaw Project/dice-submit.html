@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JIGSAW</title>
+        <link rel="stylesheet" href="dice.css">
+    </head>
+    <body>
+        <div class="bg-overlay-tint">
+            <div class="tv-container">
+                <div class="txt">
+                    <div class="container">
+                        <div class="dice" id="dice-left">
+                            <div class="front face"></div>
+                            <div class="left face"></div>
+                            <div class="right face"></div>
+                            <div class="back face"></div>
+                        </div> 
+                        <div class="dice" id="dice-right">
+                            <div class="front face"></div>
+                            <div class="left face"></div>
+                            <div class="right face"></div>
+                            <div class="back face"></div>
+                        </div>
+                    </div>
+                    
+                    <form method="GET" action="dice-submit.php"> 
+                        <p>
+                            Guess the sum of the 2 numbers on the dice...
+                        </p>
+                        <input type="text" name="guess" >
+                        <button type="submit" value="submit">Submit</button>                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
