@@ -1,0 +1,63 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url("jigsaw.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Special Elite', cursive;
+}
+
+.center-page{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.19);
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.center-page h1{
+	color: #a80606;
+	text-shadow: 2px 2px black;
+}
+
+.center-page h3{
+	color: white;
+	text-shadow: 2px 2px black;
+	letter-spacing: 2px;
+}
+
+input{
+	margin: 5px;
+}
+
+label{
+	font-size: 25px;
+	color: white;
+}
+
+input[type=submit], button{
+	font-family: 'Special Elite', cursive;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #a80606;
+	color: white;
+	border: none;
+	border-radius: 10px;
+}
+
+a{
+	margin: 10px;
+}
+
+button:hover, input[type=submit]:hover{
+	transform: scale(1.2);
+	transition: .5s;
+}
+
