@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*Css Document*/ 
+body{
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	background-image:url(bloodybg.jpg);
+	font-family: 'Special Elite', cursive;
+}
+#wrapper {
+	width: 100%;
+	height: auto;
+	min-height: 500px;
+}
+#game{
+		width: auto;
+	height: auto;
+}
+
+.container{
+	padding: 50px 0;
+	text-align: center;
+
+}
+h1{
+	margin-bottom: 100px;
+
+}
+.head{
+	margin-top: -205px;
+
+}
+
+.coinBox img {
+  float: left;
+  width: 33.33%;
+  height: auto;
+  padding-top: 130px;
+padding-bottom: 55px;
+padding-left: 100px;
+padding-right: 100px;
+}
+
+	
+.coinBox::after {/* Clearfix (clear floats) */
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+
+
+.flip img{
+	/*animation:flipIt 1s linear infinite;*/
+
+}
+.tail img{
+	/*animation-delay: 0.5s;*/
+}
+/*
+@keyframes flipIt{
+	8%{width:0px;
+		height: 200px;}
+
+	25%{width:200px;
+		height: 200px;}
+
+	50%{width:0px;
+		height: 200px;}
+
+	100%{width:0px;
+		height: 200px;}
+	
+}
+*/
+#spin {
+   -webkit-animation-name: spinner; 
+  -webkit-animation-timing-function: linear; 
+  -webkit-animation-iteration-count: infinite; 
+  -webkit-animation-duration: 2s; 
+  animation-name: spinner; 
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite; 
+  animation-duration: 2s; 
+  -webkit-transform-style: preserve-3d; 
+  -moz-transform-style: preserve-3d; 
+  -ms-transform-style: preserve-3d; 
+  transform-style: preserve-3d;
+}
+
+
+/* WebKit and Opera browsers */ 
+@-webkit-keyframes spinner { 
+  from 
+  { 
+    -webkit-transform: rotateY(0deg); 
+  } 
+  to { 
+    -webkit-transform: rotateY(-360deg); 
+  } 
+} 
+/* all other browsers */ 
+@keyframes spinner { 
+   from { 
+    -moz-transform: rotateY(0deg); 
+    -ms-transform: rotateY(0deg); 
+    transform: rotateY(0deg); 
+   } 
+   to 
+   { 
+    -moz-transform: rotateY(-360deg); 
+    -ms-transform: rotateY(-360deg); 
+    transform: rotateY(-360deg); 
+
+   } 
+}

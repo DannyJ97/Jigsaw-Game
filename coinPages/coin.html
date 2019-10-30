@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coin</title>
+	<link rel="stylesheet" type="text/css" href="coin.css">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<h1>It seems you have used all of your money flip this coin choose head or tails to determine your ultimate fate.</h1>
+<div id="wrapper">
+	<div class="container">
+		
+		<div class="row">
+<h1>JigSaw Trap | <span>Make Your Choice</span></h1>
+		</div>
+<div class ="C12">
+		<!--Blank-->
+	<div class = "C14"></div>
+	<!--Coins-->
+		<div class = "coinBox">
+			<div class = "tail">
+				<img id="spin" src="TailsCoin.PNG" alt="tailscoin" />
+			</div>
+			<div class = "head">
+				<img id="spin" src="HeadsCoin.PNG" alt="tailscoin" />
+			</div>
+		</div>
+</div>
+	<!--User Form Elements-->
+			<div class="C14">
+		<form action="coin-submit.php" method="POST">
+			<p>
+				<select class="form-control" name="userChoice">
+					<option selected>Select Your Side</option>
+					<option value="Heads">Heads</option>
+					<option value="Tails">Tails</option>
+				</select>
+			</p>
+			<p>
+				<input type="submit" value="Flip It">
+</p>
+
+		</form>
+			</div>
+	</div>
+</div>
+
+</body>
+</html> 
