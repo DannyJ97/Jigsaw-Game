@@ -16,3 +16,7 @@ You are trapped in a room after a long night of gambling. You must go through 3 
 
 
 If you pass all of these obstacles, you and your family will be set free. A leadership showing the most recent players will be given and ranked based on who completed the fastest.
+
+here is the powerpoint link
+
+https://docs.google.com/presentation/d/1Gz4Bosd6ApFsLv40Ky6Q7RHotFrEdLQlymJfDAFoyMA/edit?usp=sharing
