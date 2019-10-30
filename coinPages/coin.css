@@ -7,7 +7,31 @@ body{
 	margin: 0;
 	background-image:url(bloodybg.jpg);
 	font-family: 'Special Elite', cursive;
+
+
 }
+
+@keyframes flash {
+    0%   { background-color: rgba(255, 255, 255, 0.37); }
+    49% { background-color: rgba(150, 146, 146, 0.438); }
+    50% { background-color: rgba(0, 0, 0, 0.966); }
+    99% { background-color: rgba(150, 146, 146, 0.438); }
+    100% { background-color: rgba(255, 255, 255, 0.37); }
+  }
+
+body #wrapper {
+    /*flashing bg*/
+    animation: flash 1s infinite;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.384);
+    padding: 30px;
+}
+
 #wrapper {
 	width: 100%;
 	height: auto;
@@ -19,7 +43,7 @@ body{
 }
 
 .container{
-	padding: 50px 0;
+	padding: 50px 0px;
 	text-align: center;
 
 }
@@ -32,49 +56,28 @@ h1{
 
 }
 
+img {
+    width: 15%;
+  height: 15%;
+}
 .coinBox img {
   float: left;
-  width: 33.33%;
+  width: 300px;
   height: auto;
   padding-top: 130px;
 padding-bottom: 55px;
 padding-left: 100px;
 padding-right: 100px;
 }
-
 	
-.coinBox::after {/* Clearfix (clear floats) */
+.coinBox::after {
+	/* Clearfix (clear floats) */
   content: "";
   clear: both;
   display: table;
 
 }
 
-
-
-.flip img{
-	/*animation:flipIt 1s linear infinite;*/
-
-}
-.tail img{
-	/*animation-delay: 0.5s;*/
-}
-/*
-@keyframes flipIt{
-	8%{width:0px;
-		height: 200px;}
-
-	25%{width:200px;
-		height: 200px;}
-
-	50%{width:0px;
-		height: 200px;}
-
-	100%{width:0px;
-		height: 200px;}
-	
-}
-*/
 #spin {
    -webkit-animation-name: spinner; 
   -webkit-animation-timing-function: linear; 
